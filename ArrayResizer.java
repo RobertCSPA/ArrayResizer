@@ -41,8 +41,10 @@ public class ArrayResizer {
         int[][] arr = new int[rows][cols];
         int r = 0;
         for(int row = 0; row < array2D.length; row++){
-            if(isNonZeroRow(array2D, row)) arr[r] = array2D[row];
-            r++;
+            if(isNonZeroRow(array2D, row)){
+                arr[r] = array2D[row];
+                r++;
+            }
         }
         return arr;
     }
